@@ -1,0 +1,24 @@
+#searchHistory {
+    background-color: blueviolet;
+    height: 100vh;
+    width: 30%;
+    float: left;
+}
+#currentWeather {
+    background-color: coral;
+    float: left;
+    width: 70%;
+    height: 50vh;
+}
+#forecastDiv {
+    background-color: cornflowerblue;
+    float: left;
+    width: 70%;
+    height: 50vh;
+}
+.dayForecast {
+    background-color: gold;
+    float: left;
+    width: 20%;
+
+}
