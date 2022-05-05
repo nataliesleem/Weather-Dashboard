@@ -76,18 +76,22 @@ function weatherInfoTwo(lat, lon) {
             img.src = iconUrl;
 
             var temp = document.getElementById(`temp${i + 1}`);
-            temp.innerText = weatherData[i].temp.max;
+            temp.innerText = weatherData[i].temp.max + " °F";
     
 
             var wind = document.getElementById(`wind${i + 1}`);
-            wind.innerText = weatherData[i].wind_speed;
+            wind.innerText = weatherData[i].wind_speed + " MPH";
            
 
             var UVI = document.getElementById(`uvi${i + 1}`);
-            UVI.innerText = weatherData[i].uvi;
+            UVI.innerText = weatherData[i].uvi + " UVI";
 
             var humidity = document.getElementById(`humidity${i + 1}`);
-            humidity.innerText = weatherData[i].humidity
+            humidity.innerText = weatherData[i].humidity + " Humidity"
+
+            var date = document.getElementById(`date${i + 1}`)
+            date.innerText = (moment.unix(data.daily[i].dt).format("MM/DD/YYYY"));
+            
 
     
 
