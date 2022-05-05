@@ -84,7 +84,21 @@ function weatherInfoTwo(lat, lon) {
            
 
             var UVI = document.getElementById(`uvi${i + 1}`);
-            UVI.innerText = weatherData[i].uvi + " UVI";
+            UVI.innerText = weatherData[i].uvi;
+            var uviClass = UVI.innerText
+
+            if (uviClass < 3) {
+                UVI.classList.add("low");
+                
+            } else if (uviClass > 3 && uviClass < 6) {
+                
+                UVI.classList.add("moderate");
+
+            } else {
+                UVI.classList.add("high");
+            };
+
+            
 
             var humidity = document.getElementById(`humidity${i + 1}`);
             humidity.innerText = weatherData[i].humidity + " Humidity"

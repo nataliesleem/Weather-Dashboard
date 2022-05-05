@@ -5,13 +5,13 @@
     float: left;
 }
 #currentWeather {
-    background-color: rgb(214, 206, 202);
+    background-color: rgb(122, 178, 216);
     float: left;
     width: 70%;
     height: auto;
 }
 #forecastDiv {
-    background-color: rgb(202, 106, 106);
+    background-color: rgb(235, 227, 227);
     float: left;
     width: 70%;
     height: 50vh;
@@ -23,4 +23,26 @@
     float: left;
     width: 20%;
 
+}
+.low {
+    background-color: #77dd77;
+    color: white;
+    display: inline-block;
+}
+.moderate {
+    background-color: yellow;
+    color: white;
+    display: inline-block;
+}
+.high {
+    background-color: red;
+    color: white;
+    display: inline-block;
+}
+.block1, .block2, .block3, .block4, .block5 {
+    background-color: lightblue;
+    display: inline-block;
+    margin: auto;
+
+ 
 }
